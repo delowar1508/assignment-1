@@ -1,16 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-nav{
+
+/* Navbar style start */
+nav {
     background-color: #ffffff;
 }
+
 .nav-parent {
     display: flex;
     justify-content: space-between;
-    padding: 15px 8%;
+    padding: 10px 8%;
     align-items: center;
 }
+
 ul {
     display: flex;
     justify-content: space-between;
@@ -18,10 +22,12 @@ ul {
     gap: 24px;
     font-size: 16px;
 }
+
 a {
     text-decoration: none;
     color: #575757;
 }
+
 .common-btn {
     background-color: #1D4ED8;
     color: #FFFFFF;
@@ -29,9 +35,44 @@ a {
     width: 188px;
     height: 48px;
     padding: 12px 12px;
-    border-radius: 12px;
+    border-radius: 10px;
     display: grid;
     gap: 12px;
     border: none;
     align-items: center;
+}
+
+/* Navbar style End */
+
+header {
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 1) 0%,rgba(0, 0, 0, 0.5) 30%,rgba(0, 0, 0, 0.2) 70%
+    ), url("./assets/banner.jpg");
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.header-content {
+    display: grid;
+    color: white;
+    text-align: center;
+}
+.header-content div {
+    margin-top: 130px;
+    margin-left: 38%;
+}
+.header-content h1{
+    font-size: 68px;
+    font-family: 'inter';
+    margin-top: 65px;
+}
+.header-content p {
+    font-size: 15px;
+    font-family: 'Regular';
+    margin-top: 20px;
 }
