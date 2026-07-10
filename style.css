@@ -15,7 +15,7 @@ nav {
   align-items: center;
 }
 
-ul {
+.nav-ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -40,6 +40,12 @@ a {
   gap: 12px;
   border: none;
   align-items: center;
+  cursor: pointer;
+}
+.common-btn:hover {
+  background-color: red;
+  box-shadow: 3px 8px 20px #c1270b;
+  border: none;
 }
 
 /* Navbar style End */
@@ -91,95 +97,241 @@ header {
 
 /* Meet section style start */
 section {
-    margin: 80px 50px 0 50px;
-    padding: 0 60px 70px 60px;
+  margin: 80px 50px 0 50px;
+  padding: 0 60px 70px 60px;
 }
+
 .card-heading {
-    margin-top: 80px;
-    padding-bottom: 56px;
-    font-family: 24px;
-    font-weight: bold;
+  margin-top: 80px;
+  padding-bottom: 56px;
+  font-family: 24px;
+  font-weight: bold;
 }
+
 .card-heading {
-    text-align: center;
-    margin-top: 10px;
-    padding-bottom: 55px;
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 55px;
 }
+
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
+
 .card {
-    border: 1px solid #E5E7EB;
-    border-radius: 12px;
-    display: grid;
-    gap: 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  display: grid;
+  gap: 8px;
 }
+
 .card img {
-    width: 100%;
-    display: block;
-    border-radius: 12px;
+  width: 100%;
+  display: block;
+  border-radius: 12px;
 }
+
 .content {
-    display: grid;
-    gap: 8px;
-    padding: 20px 0 20px 16px;
+  display: grid;
+  gap: 8px;
+  padding: 20px 0 20px 16px;
 }
+
 .content h5 {
-    font-weight: 600px;
-    font-size: 12px;
-    color: #1d4ed8;
+  font-weight: 600px;
+  font-size: 12px;
+  color: #1d4ed8;
 }
+
 .content h2 {
-    font-weight: bold;
-    font-size: 20px;
+  font-weight: bold;
+  font-size: 20px;
 }
+
 .content p {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 /* Meet section style end */
 
 /* Pricing section style start */
-/* .pricing-box h2 {
-    text-align: center;
-    margin-bottom: 12px;
+
+.pricing-card-container {
+  margin: 0 55px 0 55px;
+  padding: 0 60px 0 60px;
 }
-.pricing-box > p {
-    text-align: center;
+
+.priching-heder-content {
+  text-align: center;
+  padding-bottom: 15px;
 }
-.pricing-box {
-    text-align: center;
-    padding: 60px 20px;
+
+.priching-heder-content h2 {
+  margin-bottom: 15px;
+  font-size: 48;
+  font-weight: bold;
+}
+
+.priching-heder-content p {
+  margin-bottom: 20px;
+  font-size: 16px;
 }
 
 .pricing-card-parent {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
-.price-card {
-    padding: 30px;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    text-align: center;
+/* standard card section style start */
+
+.standard-card {
+  border: 1.5px solid #E5E7EB;
+  padding: 32px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 3px 10px 20px rgb(33, 33, 33);
+}
+.standard-card h2 {
+  color: #0D1B2A;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.standard-card p {
+  color: #888888;
+  margin-bottom: 24px;
+}
+.standard-ul {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.standard-card li{
+  color: #333333;
+  display: list-item;
+  gap: 10px;
+}
+.standard-btn {
+  width: 250px;
+  height: 50px;
+  padding: 10px 0;
+  background-color: white;
+  text-align: center;
+  margin-top: 15px;
+  border: 1.5px solid #1d4ed8;
+  border-radius: 10px;
+  color: #1d4ed8;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.price-card h1 {
-    font-size: 3rem;
-    margin: 15px 0;
+/* standard card section style end */
+
+/* pro card section style start */
+
+.pro-card {
+  border: 1.5px solid #0D1B2A;
+  padding: 32px;
+  border-radius: 12px;
+  background-color: #0D1B2A;
+  box-shadow: 3px 10px 20px #0D1B2A(33, 33, 33);
+}
+.pro-card h2 {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.pro-card h6{
+  color: #93C5FD;
+  margin-bottom: 20px
+}
+.pro-card p {
+  color: #888888;
+  margin-bottom: 28px;
+}
+.pro-ul {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.pro-card li{
+  color: #FFFFFFCC;
+  display: list-item;
+  gap: 10px;
+}
+.pro-btn {
+  width: 250px;
+  height: 50px;
+  padding: 10px 0;
+  background-color: #2563EB;
+  text-align: center;
+  margin-top: 15px;
+  border: 1.5px solid #1d4ed8;
+  border-radius: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.pro-btn:hover {
+  background-color: red;
+  box-shadow: 3px 8px 20px #1d4ed8;
+  border: none;
 }
 
-.price-card ul {
-    text-align: left;
-    padding-left: 20px;
+/* pro card section style end */
+
+/* team card section style start */
+
+.team-card {
+  border: 1.5px solid #E5E7EB;
+  padding: 32px;
+  border-radius: 12px;
+  background-color: #F8F9FB;
+  box-shadow: 3px 10px 20px rgb(33, 33, 33);
+}
+.team-card h2 {
+  color: #0D1B2A;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.team-card h6{
+  color: #888888;
+  margin-bottom: 20px
+}
+.team-card p {
+  color: #888888;
+  margin-bottom: 28px;
+}
+.team-ul {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  margin-top: 15px;
+}
+.team-card li{
+  color: #333333;
+  display: list-item;
+  gap: 10px;
+}
+.team-btn {
+  width: 250px;
+  height: 50px;
+  padding: 10px 0;
+  background-color: white;
+  text-align: center;
+  margin-top: 15px;
+  border: 1.5px solid #0D1B2A;
+  border-radius: 10px;
+  color: #0D1B2A;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.price-card button {
-    margin-top: 20px;
-    padding: 12px 24px;
-    cursor: pointer;
-} */
+/* team card section style end */
